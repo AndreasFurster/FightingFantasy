@@ -2,7 +2,7 @@
 	$con = mysqli_connect('localhost','root','usbw','fighting_fantasy') or die("Error connecting to db");
 	include 'function.php';
 
-	if(isset($_GET['id'])){
+	if(isset($_GET['id']) && !empty($_GET['id']) && !is_int($_GET['id'])){
 		$story = GetStory($con, $_GET['id']);
 		$content = CreateStoryPage($story);
 	}
@@ -30,7 +30,7 @@
 
 		<script>
 			$(function(){
-				$('form').Autosave();
+				$('form.autosave').Autosave();
 			});
 		</script>
 		

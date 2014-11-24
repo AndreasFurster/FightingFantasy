@@ -12,20 +12,69 @@
               <li class="active"><a href="#Stats" data-toggle="tab">Stats</a></li>
               <li><a href="#Inventory" data-toggle="tab">Inventory</a></li>
               <li><a href="#BattleEncounters" data-toggle="tab">Battle Encounters</a></li>
-
           </ul>
           <div class="tab-content">
               <div class="tab-pane active" id="Stats">
-
+                <div class="itemS">
+                  <h2>Skill</h2>
+                  <input type="text" name="skill" class="form-control" >
+                </div>
+                <div class="itemS">
+                  <h2>Stamina</h2>
+                  <input type="text" name="stamina" class="form-control" >
+                </div>
+                <div class="itemS">
+                  <h2>Luck</h2>
+                  <input type="text" name="luck" class="form-control" >
+                </div>
               </div>
               <div class="tab-pane" id="Inventory">
+                <div style="padding: 5px;" class="leftWrapper">
+                  <div class="box inventory">
+                    <h2>Items of equipment carried</h2>
+                    <input type="text" name="inventoryItem" class="form-control" >
+                    <input type="text" name="inventoryItem" class="form-control" >
+                    <input type="text" name="inventoryItem" class="form-control" >
+                    <input type="text" name="inventoryItem" class="form-control" >
+                    <input type="text" name="inventoryItem" class="form-control" >
+                    <input type="text" name="inventoryItem" class="form-control" >
+                    <input type="text" name="inventoryItem" class="form-control" >
+                    <input type="text" name="inventoryItem" class="form-control" >
+                  </div>
+                </div>
+                <div style="padding: 5px;" class="rightWrapper">
+                  <div class="box gold">
+                    <h2>Gold</h2>
+                    <input type="text" name="gold" class="form-control" >
+                  </div>
+                  
+                  <div class="box jewels">
+                    <h2>Jewels</h2>
+                    <input type="text" name="jewels" class="form-control" >
+                  </div>
 
+                  <div class="box potions">
+                    <h2>Potions</h2>
+                    <input type="text" name="potions" class="form-control" >
+                  </div>
+
+                  <div class="box provisions">
+                    <h2>Provisions remaining</h2>
+                    <input type="text" name="provisions" class="form-control" >
+                  </div>
+                </div>
               </div>
               <div class="tab-pane" id="BattleEncounters">
-
+                <div class="box">
+                  <table>
+                    <tr><td>Skill: </td><td><input type="text" name="tb_skill" class="form-control" ></td></tr>
+                    <tr><td>Stamina: </td><td><input type="text" name="tb_stamina" class="form-control" ></td></tr>
+                  </table>
+                </div>
               </div>
           </div>
         </form>
+        <div class="clearfix"></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
