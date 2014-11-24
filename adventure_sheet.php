@@ -25,8 +25,7 @@
 					<div style="padding: 5px;" class="leftWrapper">
 						<div class="box inventory">
 							<h2>Items of equipment carried</h2>
-							<textarea cols="35" rows="10">
-							</textarea>
+							<textarea cols="35" rows="10"></textarea>
 						</div>
 					</div>
 					<div style="padding: 5px;" class="rightWrapper">
