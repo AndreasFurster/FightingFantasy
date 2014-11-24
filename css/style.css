@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* adventure sheet */
 *{
 	padding: 0;
@@ -59,7 +59,7 @@
 	border: 1px solid #cdcdcd;
 	height: 430px;
 }
-=======
+
 html, body{
 	background: url('img/body-bg.jpg');
 	background-size: cover;
@@ -72,5 +72,3 @@ html, body{
 	margin-top: 120px; 
 	display: block;
 }
-
->>>>>>> 6d7bdfdb84768501a15fe322e259b96352a41066
