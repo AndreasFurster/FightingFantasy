@@ -24,8 +24,16 @@
 		<link rel="stylesheet" href="http://bootswatch.com/cosmo/bootstrap.min.css">
 
 		<!-- Latest compiled and minified JavaScript -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/autosave.jquery.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
+		<script>
+			$(function(){
+				$('form').Autosave();
+			});
+		</script>
+		
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -55,5 +63,6 @@
 				</div>		
 			</div>
 		</div>
+		<?php include 'inventory.hmtl'; ?>
 	</body>
 </html>
