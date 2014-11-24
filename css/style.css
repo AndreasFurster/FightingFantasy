@@ -1,5 +1,13 @@
 
 /* adventure sheet */
+html, body{
+	background: url('img/body-bg.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 *{
 	padding: 0;
 	margin: 0;
@@ -60,14 +68,6 @@
 	border: 1px solid #cdcdcd;
 	height: 430px;
 	margin-left: -5px;
-}
-
-html, body{
-	background: url('img/body-bg.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
 .big-spacer{
