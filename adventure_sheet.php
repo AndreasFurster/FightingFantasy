@@ -5,7 +5,7 @@
 		<link href='css/style.css' rel='stylesheet'>
 	</head>
 	<body>
-		<div class="wrapper">
+		<div class="wrapper" style="background-color: white;">
 			<div class="leftWrapper">
 				<div class="itemWrapper">
 					<div class="itemS">
@@ -54,6 +54,74 @@
 				</div>
 			</div>
 			<div class="rightWrapper">
+				<div class="leftWrapper">
+					<h1>Battle encounters</h1>
+					<div class="box">
+						<table>
+							<tr><td>Skill: </td><td><input type="text" name="tb_skill"></td></tr>
+							<tr><td>Stamina: </td><td><input type="text" name="tb_stamina"></td></tr>
+						</table>
+					</div>
+					<div class="box">
+						<table>
+							<tr><td>Skill: </td><td><input type="text" name="tb_skill"></td></tr>
+							<tr><td>Stamina: </td><td><input type="text" name="tb_stamina"></td></tr>
+						</table>
+					</div>
+					<div class="box">
+						<table>
+							<tr><td>Skill: </td><td><input type="text" name="tb_skill"></td></tr>
+							<tr><td>Stamina: </td><td><input type="text" name="tb_stamina"></td></tr>
+						</table>
+					</div>
+					<div class="box">
+						<table>
+							<tr><td>Skill: </td><td><input type="text" name="tb_skill"></td></tr>
+							<tr><td>Stamina: </td><td><input type="text" name="tb_stamina"></td></tr>
+						</table>
+					</div>
+					<div class="box">
+						<table>
+							<tr><td>Skill: </td><td><input type="text" name="tb_skill"></td></tr>
+							<tr><td>Stamina: </td><td><input type="text" name="tb_stamina"></td></tr>
+						</table>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="rightWrapper">
+					
+					<div class="box">
+						<table>
+							<tr><td>Skill: </td><td><input type="text" name="tb_skill"></td></tr>
+							<tr><td>Stamina: </td><td><input type="text" name="tb_stamina"></td></tr>
+						</table>
+					</div>
+					<div class="box">
+						<table>
+							<tr><td>Skill: </td><td><input type="text" name="tb_skill"></td></tr>
+							<tr><td>Stamina: </td><td><input type="text" name="tb_stamina"></td></tr>
+						</table>
+					</div>
+					<div class="box">
+						<table>
+							<tr><td>Skill: </td><td><input type="text" name="tb_skill"></td></tr>
+							<tr><td>Stamina: </td><td><input type="text" name="tb_stamina"></td></tr>
+						</table>
+					</div>
+					<div class="box">
+						<table>
+							<tr><td>Skill: </td><td><input type="text" name="tb_skill"></td></tr>
+							<tr><td>Stamina: </td><td><input type="text" name="tb_stamina"></td></tr>
+						</table>
+					</div>
+					<div class="box">
+						<table>
+							<tr><td>Skill: </td><td><input type="text" name="tb_skill"></td></tr>
+							<tr><td>Stamina: </td><td><input type="text" name="tb_stamina"></td></tr>
+						</table>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
 			</div>
 			<div style="clear: both;"></div>
 		</div>
