@@ -10,14 +10,15 @@
 		$content = CreateStartPage();
 	}
 
+	$title = isset($_GET['id']) ? "Page " . $_GET['id'] : "Startpage";
+	$isHomePage = !isset($story);
+
 ?>
-
-
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title><?php echo isset($_GET['id']) ? "Page " . $_GET['id'] : "Startpage" ?></title>
+		<title><?php echo $title; ?></title>
 
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="http://bootswatch.com/cosmo/bootstrap.min.css">
@@ -31,20 +32,26 @@
 		<div class="big-spacer"></div>
 		<div class="container">
 			<div class="panel panel-default">
-				<div class="panel-heading">Game page #</div>
+				<div class="panel-heading"><?php echo $title; ?></div>
 				<div class="panel-body">
 					<?php echo $content; ?>
 				</div>
 				<div class="panel-footer">
 					<div class="btn-group btn-group-lg btn-group-justified btn-group-fill-height">
-						 <a href="#" class="btn btn-default" role="button">
-						 	123
-					 	</a>
-						<a href="#" class="btn btn-default" role="button">
-							456
-						</a>
-					</div>
-				</div>
+<?php
+						if (!$isHomePage) {
+							foreach ($story['options'] as $option) {
+								echo '<a href="#" class="btn btn-default" role="button">123</a>';
+							
+
+							}
+						}
+						else{
+							echo '<a href="index.php?id=1" class="btn btn-success" role="button">Begin game!</a>';
+						}
+?>					
+					</div>	
+				</div>		
 			</div>
 		</div>
 	</body>
