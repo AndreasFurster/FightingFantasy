@@ -63,6 +63,9 @@
 				</div>		
 			</div>
 		</div>
-		<?php include 'inventory.hmtl'; ?>
+		<button type="button" class="btn btn-primary fixed-bottom" data-toggle="modal" data-target="#PlayerOverview">
+		  Player Overview
+		</button>
+		<?php include 'inventory.html'; ?>
 	</body>
 </html>
