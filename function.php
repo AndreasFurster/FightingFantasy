@@ -26,20 +26,13 @@
 	function CreateStoryPage($story)
 	{
 
-		echo "<h1>Page " . $story['id'] . "</h1>";
-		echo "<p>" . $story['text'] . "</p>";
-		echo "<ul>";
-
-		foreach ($story['options'] as $option) {
-			echo $option != null ? 
-				"<li><a href='?id=$option'>$option</a></li>" 
-				: "";
-		}
-		echo "</ul>";
+		$result = "<h1>Page " . $story['id'] . "</h1>";
+		$result .= "<p>" . $story['text'] . "</p>";
+		return $result;
 	}
 
 	function CreateStartPage()
 	{
-		return include 'homepage.html';
+		return '<h3>The Startpage!!</h3>';
 	}
 ?>

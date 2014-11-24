@@ -41,9 +41,8 @@
 <?php
 						if (!$isHomePage) {
 							foreach ($story['options'] as $option) {
-								echo '<a href="#" class="btn btn-default" role="button">123</a>';
-							
-
+								if ($option == null) break;
+								echo '<a href="?id=' . $option . '" class="btn btn-default" role="button">' . $option . '</a>';
 							}
 						}
 						else{

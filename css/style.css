@@ -61,7 +61,7 @@
 }
 
 html, body{
-	background: url('img/body-bg.jpg');
+	background: url('../img/body-bg.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
