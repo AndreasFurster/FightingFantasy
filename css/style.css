@@ -24,6 +24,7 @@
 	width: 50%;
 	min-height: 150px;
 	padding-bottom: 5px;
+	margin-right: -5px;
 }
 
 .itemS{
@@ -58,6 +59,7 @@
 .inventory{
 	border: 1px solid #cdcdcd;
 	height: 430px;
+	margin-left: -5px;
 }
 
 html, body{
