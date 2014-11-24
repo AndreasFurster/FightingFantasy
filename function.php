@@ -40,6 +40,6 @@
 
 	function CreateStartPage()
 	{
-		return "Startpage";
+		return include 'homepage.html';
 	}
 ?>
