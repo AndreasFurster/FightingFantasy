@@ -32,23 +32,25 @@
 		<div class="big-spacer"></div>
 		<div class="container">
 			<div class="panel panel-default">
-				<div class="panel-heading"><?php echo $title; ?></div>
+				<div class="panel-heading">
+					<?php echo $title; ?>
+				</div>
 				<div class="panel-body">
 					<?php echo $content; ?>
 				</div>
 				<div class="panel-footer">
 					<div class="btn-group btn-group-lg btn-group-justified btn-group-fill-height">
-<?php
-						if (!$isHomePage) {
-							foreach ($story['options'] as $option) {
-								if ($option == null) break;
-								echo '<a href="?id=' . $option . '" class="btn btn-default" role="button">' . $option . '</a>';
+						<?php
+							if (!$isHomePage) {
+								foreach ($story['options'] as $option) {
+									if ($option == null) break;
+									echo '<a href="?id=' . $option . '" class="btn btn-default" role="button">' . $option . '</a>';
+								}
 							}
-						}
-						else{
-							echo '<a href="index.php?id=1" class="btn btn-success" role="button">Begin game!</a>';
-						}
-?>					
+							else{
+								echo '<a href="index.php?id=1" class="btn btn-success" role="button">Begin game!</a>';
+							}
+						?>					
 					</div>	
 				</div>		
 			</div>

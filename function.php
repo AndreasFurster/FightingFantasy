@@ -1,8 +1,8 @@
 <?php
 
-	function GetStory($con, $curpage = null)
+	function GetStory($con, $curpage)
 	{
-		$query = 'SELECT * FROM `location` WHERE `page` = '.$curpage;
+		$query = 'SELECT * FROM `location` WHERE `page` = '. mysqli_real_escape_string($curpage);
 		$result = $con->query($query);
 
 		$row = mysqli_fetch_object($result);
