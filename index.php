@@ -39,7 +39,7 @@
 	<body>
 		<div class="big-spacer"></div>
 		<div class="container">
-			<div class="panel panel-default">
+			<div class="panel panel-default game-panel">
 				<div class="panel-heading">
 					<?php echo $title; ?>
 				</div>
@@ -65,8 +65,9 @@
 		</div>
 			<?php 
 				if (!$isHomePage) {
-					echo '<button type="button" class="btn btn-primary fixed-bottom" data-toggle="modal" data-target="#PlayerOverview">Player Overview</button>';
 					include 'inventory.html'; 
+					echo '<button type="button" class="btn btn-primary fixed-bottom-left" data-toggle="modal" data-target="#PlayerOverview">Player Overview</button>';
+					echo '<a href="index.php" role="button" class="btn btn-danger fixed-bottom-right">Back to the intro</button>';
 				}
 			?>
 	</body>

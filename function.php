@@ -25,10 +25,7 @@
 
 	function CreateStoryPage($story)
 	{
-
-		$result = "<h1>Page " . $story['id'] . "</h1>";
-		$result .= "<p>" . $story['text'] . "</p>";
-		return $result;
+		return "<p>" . $story['text'] . "</p>";
 	}
 
 	function CreateStartPage()
