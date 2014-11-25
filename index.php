@@ -10,7 +10,7 @@
 		$content = CreateStartPage();
 	}
 
-	$title = isset($_GET['id']) ? "Page " . $_GET['id'] : "Startpage";
+	$title = isset($_GET['id']) ? "Page " . $_GET['id'] : "Introduction";
 	$isHomePage = !isset($story);
 
 ?>
@@ -63,9 +63,11 @@
 				</div>		
 			</div>
 		</div>
-		<button type="button" class="btn btn-primary fixed-bottom" data-toggle="modal" data-target="#PlayerOverview">
-		  Player Overview
-		</button>
-		<?php include 'inventory.html'; ?>
+			<?php 
+				if (!$isHomePage) {
+					echo '<button type="button" class="btn btn-primary fixed-bottom" data-toggle="modal" data-target="#PlayerOverview">Player Overview</button>';
+					include 'inventory.html'; 
+				}
+			?>
 	</body>
 </html>
