@@ -33,6 +33,6 @@
 
 	function CreateStartPage()
 	{
-		return '<h3>The Startpage!!</h3>';
+		return file_get_contents('homepage.html');
 	}
 ?>
