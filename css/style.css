@@ -79,6 +79,7 @@ html, body{
 
 .inventory{
 	height: 430px;
+	overflow-y: auto;
 }
 
 html, body{
